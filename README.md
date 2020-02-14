@@ -1,5 +1,3 @@
-# Pizzeria
-
 **Cómo instalar .NODE, REDIS, REDILY y POSTMAN
 
 **INSTALAR NODE
