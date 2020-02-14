@@ -3,6 +3,7 @@
 **INSTALAR NODE
 
 1.-Descargar NODE desde su página oficial. Será la última versión actual 12.16.0 para tener todos el mismo:
+	
 	https://nodejs.org/dist/v12.16.0/node-v12.16.0-x64.msi/
 
 El proceso de instalación es sencillo pero hay que fijarse y no instalar Chocolatery cuando nos pida si lo queremos. Viene por defecto desmarcado así que dadle todo el rato a siguiente y ya está.
@@ -15,7 +16,9 @@ Entonces en consola pondremos esto:
 Y debería decir que se está usando la versión 12.16.0, en cuyo caso está todo correcto.
 
 **INSTALAR BASE DE DATOS REDIS
+
 1.- Descargar REDIS para Windows:
+	
 	https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
 	
 2.- Lo descomprimimos en algún lugar, preferiblemente c:\. 
@@ -30,6 +33,7 @@ NPM es el Node Package Manager que instalamos anteriormente. Cuando le deis empe
 **INSTALAR GESTOR DE REDIS (REDILY)
 
 1.- Descargamos la versión Windows del programa Redily desde su web:
+	
 	https://www.redily.app/download/win
 	
 2.- Instalamos normalmente (si Windows bloquea el archivo le damos a "Más información" y después a "Ejecutar de todas formas".
@@ -41,6 +45,7 @@ NPM es el Node Package Manager que instalamos anteriormente. Cuando le deis empe
 **INSTALAR POSTMAN
 
 1.- Vamos a su web y descargamos la App:
+	
 	https://www.postman.com/
 	
 2.- Instalamos y ejecutamos.
