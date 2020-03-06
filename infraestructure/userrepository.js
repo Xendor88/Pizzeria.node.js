@@ -13,16 +13,20 @@ class UserRepository {
         var client = this.client;
         return new Promise((resolve, reject) => {
             client.HGET('idx-email', email, function (err, data) {
-                if (err) {
+                if (!data) {
+                    reject('Password o user not exist');
+
+                } else if (err) {
                     reject(err)
+
                 } else {
-                    client.GET(data), function (err, data) {
+                    client.GET(data ,function (err, data) {
                         if (err) {
                             reject(err)
                         } else {
-                            resolve(data)
+                            resolve(JSON.parse(data))
                         }
-                    }
+                    });
                 }
             })
         });
@@ -35,9 +39,9 @@ class UserRepository {
                 if (err) {
                     reject(err)
                 } else {
-                    client.HSET('idx-email', user.email, user.id, function (err,data) {
-                      console.log(err);
-                      console.log(data);
+                    client.HSET('idx-email', user.email, user.id, function (err, data) {
+                        console.log(err);
+                        console.log(data);
                     })
 
                 }
